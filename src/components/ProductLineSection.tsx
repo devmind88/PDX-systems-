@@ -11,7 +11,8 @@ import {
   Calendar, 
   Zap, 
   Lock, 
-  Plus
+  Plus,
+  Globe
 } from 'lucide-react';
 import { SAAS_PRODUCTS } from '../data/products';
 import { SaasProduct } from '../types';
@@ -66,6 +67,7 @@ export const ProductLineSection: React.FC<ProductLineSectionProps> = ({
                     : 'bg-[#0f172a] text-slate-300 hover:text-white hover:bg-slate-800/80 border-slate-800'
                 }`}
               >
+                {prod.id === 'pdx-custom-web' && <Globe className="w-4 h-4" />}
                 {prod.id === 'pdx-ai-voice' && <PhoneCall className="w-4 h-4" />}
                 {prod.id === 'pdx-crm-pipeline' && <BarChart3 className="w-4 h-4" />}
                 {prod.id === 'pdx-omnichannel-hub' && <MessageSquare className="w-4 h-4" />}

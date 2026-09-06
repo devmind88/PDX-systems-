@@ -2,18 +2,52 @@ import { SaasProduct } from '../types';
 
 export const SAAS_PRODUCTS: SaasProduct[] = [
   {
+    id: 'pdx-custom-web',
+    name: 'Custom Website Development',
+    tagline: 'High-performance, modern, and conversion-first user experience.',
+    category: 'Web Engineering & Architecture',
+    badge: 'Core Service',
+    priceMonthly: 499,
+    description: 'High-performance, modern, and mobile-responsive websites engineered for speed, technical SEO, and conversion-first user experience.',
+    highlights: [
+      'Custom frontend architecture engineered for speed & clean maintainability',
+      'Sub-second load times (<0.8s Core Web Vitals optimization)',
+      'Dynamic contact intake forms with instant CRM and pipeline integration',
+      'Clean analytics tracking and conversion goal funnel telemetry'
+    ],
+    keyMetrics: [
+      { label: 'Speed Index', value: '99/100' },
+      { label: 'Avg Page Load', value: '< 0.8s' },
+      { label: 'Mobile Conversion', value: '+54%' }
+    ],
+    capabilities: [
+      'Custom Frontend Architecture',
+      'Sub-Second Load Times',
+      'Dynamic Contact Intake Forms',
+      'Clean Analytics Tracking',
+      'Technical SEO & Mobile Responsiveness'
+    ],
+    interfacePreview: {
+      type: 'web',
+      title: 'High-Performance Web Architecture',
+      subtitle: 'Mobile-Responsive • Technical SEO • Sub-Second Speed',
+      metrics: 'Core Web Vitals: 99/100 • Dynamic Intake Forms Active'
+    },
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80'
+  },
+  {
     id: 'pdx-ai-voice',
     name: 'PDX VoiceAI Receptionist™',
-    tagline: 'Never miss another lead. Answers calls 24/7 in <1 second.',
+    tagline: 'AI-Driven Web Systems & 24/7 AI Chatbot Add-On.',
     category: 'AI Voice & Telephony',
     badge: 'Flagship Innovation',
     priceMonthly: 149,
-    description: 'Human-grade AI voice agent trained specifically for service contractors and local businesses. Answers inquiries, qualifies project scope, quotes ballpark estimates, and books real-time calendar appointments without ever putting a lead on hold.',
+    description: 'Human-grade AI voice agent and conversational chatbot trained specifically for service contractors and local businesses. Upgrade any standard build with a custom-trained AI conversational agent that handles visitor inquiries, qualifies inbound leads, and automates 24/7 client booking without ever putting a lead on hold.',
     highlights: [
-      'Zero hold time, sub-second latency with conversational voice models',
-      'Direct sync with Google Calendar, Outlook, and CRM dispatch boards',
-      'Intelligent emergency escalation & live call transfer to owner',
-      'Automatic instant SMS confirmation sent while caller is still on the line'
+      'AI-Driven Web Systems & 24/7 AI Chatbot Add-On for any website or phone line',
+      'Upgrade any standard build with a custom-trained AI conversational agent',
+      'Handles visitor inquiries, qualifies inbound leads, and automates 24/7 client booking',
+      'Zero hold time, sub-second latency with real-time calendar appointment booking'
     ],
     keyMetrics: [
       { label: 'Avg Call Answer Time', value: '< 1.2s' },

@@ -99,12 +99,18 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
           </div>
 
-          {/* Col 2: SaaS Products */}
+          {/* Col 2: SaaS Products & Services */}
           <div>
             <div className="font-bold text-sm text-white mb-3 uppercase tracking-wider">
-              SaaS Products
+              SaaS Products & Services
             </div>
             <ul className="space-y-2">
+              <li>
+                <a href="#products" className="hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+                  <span>Custom Website Development</span>
+                  <span className="text-[9px] px-1.5 py-0.2 rounded bg-emerald-500/20 text-emerald-300 font-semibold">Core</span>
+                </a>
+              </li>
               <li>
                 <a href="#products" className="hover:text-emerald-400 transition-colors">
                   PDX VoiceAI Receptionist™

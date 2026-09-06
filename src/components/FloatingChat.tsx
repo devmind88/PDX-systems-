@@ -25,7 +25,7 @@ export const FloatingChat: React.FC<FloatingChatProps> = ({
   const [messages, setMessages] = useState<Array<{ sender: 'bot' | 'user'; text: string }>>([
     {
       sender: 'bot',
-      text: 'Hi there! I am the PDX Systems AI Voice & Lead Assistant. Are you looking to capture more contractor leads or test out our 24/7 AI Receptionist?'
+      text: 'Hi there! I am your AI-Driven Web Systems & 24/7 AI Chatbot Add-On. Upgrade any standard build with a custom-trained AI conversational agent that handles visitor inquiries, qualifies inbound leads, and automates 24/7 client booking. How can I help you today?'
     }
   ]);
   const [isTyping, setIsTyping] = useState(false);
@@ -79,8 +79,8 @@ export const FloatingChat: React.FC<FloatingChatProps> = ({
                 <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 rounded-full bg-emerald-400" />
               </div>
               <div>
-                <h4 className="font-bold text-xs text-white">PDX AI Live Assistant</h4>
-                <p className="text-[10px] text-emerald-400 font-mono">Online • Sub-second AI Agent</p>
+                <h4 className="font-bold text-xs text-white">AI-Driven Web Systems & 24/7 AI Chatbot Add-On</h4>
+                <p className="text-[10px] text-emerald-400 font-mono">Custom-Trained Agent • Online 24/7</p>
               </div>
             </div>
 

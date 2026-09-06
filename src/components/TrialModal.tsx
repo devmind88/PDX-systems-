@@ -37,7 +37,8 @@ export const TrialModal: React.FC<TrialModalProps> = ({
     fullName: '',
     email: '',
     phone: '',
-    industry: 'Roofing & Contracting'
+    industry: 'Roofing & Contracting',
+    projectScope: 'Custom Website Development'
   });
 
   if (!isOpen) return null;
@@ -233,13 +234,30 @@ export const TrialModal: React.FC<TrialModalProps> = ({
                 </div>
               </div>
 
+              <div>
+                <label className="text-xs font-semibold text-slate-300 block mb-1">
+                  Project Scope / Inquiry
+                </label>
+                <select
+                  value={formData.projectScope}
+                  onChange={(e) => setFormData({ ...formData, projectScope: e.target.value })}
+                  className="w-full bg-[#070a14] border border-slate-700 focus:border-emerald-500 rounded-xl px-3 py-2.5 text-xs text-white outline-none"
+                >
+                  <option value="Custom Website Development">Custom Website Development</option>
+                  <option value="Website + 24/7 AI Chatbot Add-On">Website + 24/7 AI Chatbot Add-On</option>
+                  <option value="Add AI Chatbot to Existing Website">Add AI Chatbot to Existing Website</option>
+                  <option value="All-In-One CRM & AI Voice Receptionist">All-In-One CRM & AI Voice Receptionist</option>
+                  <option value="Trade / Contractor Automation Pipeline">Trade / Contractor Automation Pipeline</option>
+                </select>
+              </div>
+
               {/* Addons Selection */}
               <div className="pt-2">
                 <div className="text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-2">
                   Recommended Add-Ons:
                 </div>
                 <div className="space-y-1.5">
-                  {ADDONS.slice(0, 2).map((addon) => {
+                  {ADDONS.slice(0, 3).map((addon) => {
                     const isChecked = selectedAddons.includes(addon.id);
                     return (
                       <div

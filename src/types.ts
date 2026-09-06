@@ -10,7 +10,7 @@ export interface SaasProduct {
   keyMetrics: { label: string; value: string }[];
   capabilities: string[];
   interfacePreview: {
-    type: 'phone' | 'pipeline' | 'inbox' | 'reviews' | 'calendar';
+    type: 'phone' | 'pipeline' | 'inbox' | 'reviews' | 'calendar' | 'web';
     title: string;
     subtitle: string;
     metrics?: string;

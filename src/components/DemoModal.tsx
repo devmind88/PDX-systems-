@@ -28,7 +28,8 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
     email: '',
     phone: '',
     company: '',
-    trade: 'Roofing / Construction'
+    trade: 'Roofing / Construction',
+    projectScope: 'Custom Website Development'
   });
 
   if (!isOpen) return null;
@@ -158,6 +159,21 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                   onChange={e => setFormData({ ...formData, company: e.target.value })}
                   className="w-full bg-[#070a14] border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 outline-none focus:border-cyan-400"
                 />
+              </div>
+
+              <div>
+                <label className="text-xs text-slate-300 font-semibold block mb-1">Project Scope / Inquiry</label>
+                <select
+                  value={formData.projectScope}
+                  onChange={e => setFormData({ ...formData, projectScope: e.target.value })}
+                  className="w-full bg-[#070a14] border border-slate-700 rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-cyan-400"
+                >
+                  <option value="Custom Website Development">Custom Website Development</option>
+                  <option value="Website + 24/7 AI Chatbot Add-On">Website + 24/7 AI Chatbot Add-On</option>
+                  <option value="Add AI Chatbot to Existing Website">Add AI Chatbot to Existing Website</option>
+                  <option value="All-In-One CRM & AI Voice Receptionist">All-In-One CRM & AI Voice Receptionist</option>
+                  <option value="Trade / Contractor Automation Pipeline">Trade / Contractor Automation Pipeline</option>
+                </select>
               </div>
 
               <button

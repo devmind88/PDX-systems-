@@ -2,5 +2,7 @@
   "name": "PDX SYSTEMS - All-In-One CRM & AI Automation Platform",
   "description": "Official website and SaaS product line for PDX SYSTEMS featuring 24/7 AI Voice Receptionist, Automated CRM Pipelines, Reputation Boosters, and high-conversion business growth tools.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

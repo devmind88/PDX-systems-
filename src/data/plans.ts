@@ -79,6 +79,13 @@ export const PRICING_PLANS: PricingPlan[] = [
 
 export const ADDONS = [
   {
+    id: 'addon-ai-web-chatbot',
+    name: 'AI-Driven Web Systems & 24/7 AI Chatbot Add-On',
+    price: 199,
+    isOneTime: false,
+    description: 'Upgrade any standard build with a custom-trained AI conversational agent that handles visitor inquiries, qualifies inbound leads, and automates 24/7 client booking.'
+  },
+  {
     id: 'addon-managed-setup',
     name: 'Done-For-You VIP Setup & Scripting',
     price: 497,
